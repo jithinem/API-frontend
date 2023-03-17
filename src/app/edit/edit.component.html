@@ -1,0 +1,26 @@
+<form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Name</label>
+      <input type="text" [(ngModel)]="fullname" name="fullname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Age</label>
+        <input type="text" [(ngModel)]="age" name="age" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your age">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Salary</label>
+        <input type="text" [(ngModel)]="salary" name="salary" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your salary">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Post</label>
+        <input type="text" [(ngModel)]="post" name="post" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your post">
+      </div>  
+      <div class="bottom">
+        <button type="submit" (click)="updateApi()" class="btn btn-primary mt-2">Submit</button>
+        <button type="submit" (click)="deleteApi()" class="btn btn-primary mt-2">Delete API</button>
+        <button type="submit" routerLink="" class="btn btn-primary mt-2">Back to home</button>    
+      </div>    
+
+
+  </form>
+

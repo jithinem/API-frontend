@@ -1,0 +1,30 @@
+<form>
+ <h4>Create New API</h4>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Name</label>
+      <input type="text" [(ngModel)]="fullname" name="fullname" class="form-control"   placeholder="Enter your name">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Age</label>
+        <input type="text" [(ngModel)]="age" name="age" class="form-control" id="exampleInputEmail12" aria-describedby="emailHelp" placeholder="Enter your age">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Salary</label>
+        <input type="text" [(ngModel)]="salary" name="salary" class="form-control" id="exampleInputEmail13" aria-describedby="emailHelp" placeholder="Enter your salary">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Designation</label>
+        <input type="text" [(ngModel)]="post" name="post" class="form-control"  placeholder="Enter your post">
+      </div>   
+      <!-- <div class="form-group1">
+        <label for="exampleInputEmail1">Date</label>
+        <input type="text" [(ngModel)]="d" name="d" class="form-control"  placeholder="Enter your post">
+      </div>         -->
+      <div class="bottom">
+        <button type="submit" (click)="createNew()" class="btn btn-primary mt-2">Submit</button>
+        <button routerLink="" class="btn btn-primary mt-2">Back to Home</button>
+    
+      </div>
+
+  </form>
+

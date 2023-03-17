@@ -1,0 +1,32 @@
+<section>
+    <div class="container">
+        <div class="heading">
+            <h2>List of API's</h2>
+            <button type="submit" routerLink="create" class="btn btn-primary mt-2" >Add new API</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>DATE</th>
+                    <th>NAME</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let api of allApi">
+                    <td>{{api._id}}</td>
+                    <td>{{date}}</td>
+                    <td>{{api.name}}</td>
+                    <td><button routerLink="details" (click)="loadId(api._id)">Details</button></td>
+                    <td><button routerLink="edit" (click)="loadId(api._id)">Edit</button></td>
+                </tr>
+            </tbody>
+          </table>
+          
+    </div>
+    
+</section>
+
