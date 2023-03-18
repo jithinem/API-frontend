@@ -1,4 +1,5 @@
 <form>
+  <h3>Edit</h3>
     <div class="form-group">
       <label for="exampleInputEmail1">Name</label>
       <input type="text" [(ngModel)]="fullname" name="fullname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name">
@@ -16,8 +17,8 @@
         <input type="text" [(ngModel)]="post" name="post" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your post">
       </div>  
       <div class="bottom">
-        <button type="submit" (click)="updateApi()" class="btn btn-primary mt-2">Submit</button>
-        <button type="submit" (click)="deleteApi()" class="btn btn-primary mt-2">Delete API</button>
+        <button type="submit" (click)="updateApi()" class="btn btn-primary mt-2">Update</button>
+        <button type="submit" (click)="deleteApi()" class="btn btn-primary mt-2">Delete data</button>
         <button type="submit" routerLink="" class="btn btn-primary mt-2">Back to home</button>    
       </div>    
 

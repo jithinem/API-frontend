@@ -7,9 +7,9 @@ import { DataService } from '../services/data.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  date:any;
+  // date:any;
   constructor(private ds:DataService){
-   this.date=new Date().toLocaleDateString('en-in', {   day:"numeric", month:"numeric", year:"numeric",})
+  //  this.date=new Date().toLocaleDateString('en-in', {   day:"numeric", month:"numeric", year:"numeric",})
     this.ds.getAllApi().subscribe(
       (data:any)=>{
         this.allApi=data.Api
